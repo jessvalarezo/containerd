@@ -9,6 +9,7 @@ import (
 	"github.com/containerd/containerd/cmd/ctr/commands/containers"
 	"github.com/containerd/containerd/cmd/ctr/commands/content"
 	"github.com/containerd/containerd/cmd/ctr/commands/images"
+	"github.com/containerd/containerd/cmd/ctr/commands/snapshot"
 	"github.com/containerd/containerd/namespaces"
 	"github.com/containerd/containerd/server"
 	"github.com/containerd/containerd/version"
@@ -81,7 +82,7 @@ containerd CLI
 		pushObjectCommand,
 		rootfsCommand,
 		runCommand,
-		snapshotCommand,
+		snapshot.SnapshotCommand,
 		tasksCommand,
 		pluginsCommand,
 		versionCommand,
