@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 
+	"github.com/containerd/containerd/cmd/ctr/commands/containers"
 	"github.com/containerd/containerd/namespaces"
 	"github.com/containerd/containerd/server"
 	"github.com/containerd/containerd/version"
@@ -65,7 +66,7 @@ containerd CLI
 	}
 	app.Commands = append([]cli.Command{
 		applyCommand,
-		containersCommand,
+		containers.ContainersCommand,
 		contentCommand,
 		eventsCommand,
 		fetchCommand,
